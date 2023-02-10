@@ -20,7 +20,7 @@
 
 header {
     font-family: 'fonte-padrao';
-    min-height: 150px;
+    min-height: 90px;
     max-width: 100%;
     margin: 10px ;
     padding: 6px;
@@ -38,33 +38,42 @@ header {
 header  h1  {
     font-family: var(--fonte-padrao);
     font-size: 3em;
+    font-weight: normal;
     padding-top: 10px;
     margin-bottom: 20px;
     outline: 12px;
     text-align: center;
     display: block;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     border-radius: 10px ;
 }
 
 main { 
     padding:20px;
     margin:  auto;
-    min-width: 600px;
-    max-width:1090px;
-    display:inline-block;
-    border: 2px solid transparent;
-    border-radius: 8px;
+    display:block;
+} 
 
-}
-
-section  h2 {
+ header h2 {
+    font-weight: normal;
     padding-top: 15px;
     margin-bottom: 20px;
     outline: 12px;
     text-align: center;
     display: block;
-   
+    font-size: 1.5em;
+    line-height: 2em;
+ }
+
+section  h2 {
+    color: var(--cor02);
+    padding-top: 10px;
+    margin-bottom: 15px;
+    outline: 12px;
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+    line-height:2em;
 }
 
 section  p {
@@ -72,54 +81,58 @@ section  p {
     font-family: var(--fonte-padrao);
     font-size: 1em;
     margin: 15px 0px;
-    padding-bottom: 15px;
-    outline: 12px;
+    padding-bottom: 10px;
+    outline: 10px;
     display: inline-block;
-    text-align: justify;
-    text-indent: 30px;
+    text-align: center;
+    text-indent: 5px;
     line-height: 1.5em;
 }
 
  
-section button {
+ section  nav button {
     font-size: 1.5em;
-    width: 850px;
+    width: 680px;
     height: 53px;
     margin: 0 auto;
     color: white;
     background-color: var(--cor01);
     padding: 10px;
-    border-radius: 5px;
+    position:relative;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 15px;
+    border-radius: 20px;
     display: inline-block;
     border-color: darkgreen;
-    display: block;
-    box-shadow: 2px 1px 4px px rgba(0, 0, 0, 0.333);
-   
     
+    box-shadow: 2px 1px 4px px rgba(0, 0, 0, 0.333);
 }
 
 section img {
-   max-width: 100%;
+    max-width: 100%;
     position: relative;
     display: block;
-    padding: 6px;
+    padding: 2px;
     margin: 0 auto;
-    border: 2px solid transparent;
-    border-radius: 4px;
-    box-shadow: 2px 1px 10px 6px rgba(0, 0, 0, 0.333);
 }
+    
 
 section video {
     position: relative;
-    display: inline-block; 
+    display: block; 
     margin: 0 auto;
     border: 2px solid transparent;
-    border-radius: 4px;
-    box-shadow: 2px 1px 8px 6px rgba(0, 0, 0, 0.333);
+   
 }
+div.video {
+    background-color:rgb(223, 233, 223);
+    margin: 0px -20px 30px -20px;
+    margin: 0px 10px;
+    padding: 20px;
+    border-radius: 2px;
+    position: relative;
+}
+
 nav {
     padding-right: 10px;
     padding-left: 10px;
@@ -131,14 +144,19 @@ nav {
     font-weight: bold;
  }
 
+ nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor02);
+    padding: 2px 6px;
+ }
+
  nav a:hover {
     color: white;
     background-color: var(--cor01);
     padding: 10px;
     border-radius: 5px;
     transition-duration: .5s;
-
-
  }
 
 tr td {
@@ -147,14 +165,12 @@ tr td {
     border: 2px solid transparent;
     border-radius: 4px;
     box-shadow: 2px 1px 8px 6px rgba(0, 0, 0, 0.333);
+  
 }
 
-
-
-
 footer{
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 5px;
     background-color: dimgrey;
     color: white;
     text-align: center;
