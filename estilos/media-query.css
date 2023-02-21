@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+* {
+   
+    padding: 0px;
+    margin: 0px;
+}
+@media screen and (min-width: 768px) {
+     table ul tr td img {
+        display: block;
+    }
+    table ul tr td video {
+        display: block;
+    }
+    main {
+        width: 768px;
+    }
+    
+}
